@@ -7,10 +7,6 @@ int main() {
     // カレントディレクトリを取得
     cout << fs::current_path() << endl;
 
-    // カレントディレクトリを設定
-    fs::current_path("E:\\Cpp20_for_game_developers");
-    cout << fs::current_path() << endl;
-
     // ファイルが存在するか否かを確認
     if (fs::exists("test.txt")) {
         fs::copy("test.txt", "test2.txt"); // ファイルをコピー
