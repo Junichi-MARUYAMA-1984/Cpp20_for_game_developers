@@ -3,7 +3,7 @@
 using namespace std;
 
 // _deg リテラル演算子の定義
-constexpr double operator"" _deg(long double deg) {
+constexpr double operator ""_deg(long double deg) {
     return deg * (3.14159265358979323846 / 180.0);
 }
 
@@ -22,7 +22,7 @@ struct MyRepeatObj {
     }
 };
 
-constexpr MyRepeatObj operator"" _repeat(const char* s, size_t len) {
+constexpr MyRepeatObj operator ""_repeat(const char* s, size_t len) {
     return MyRepeatObj{ s, len }; // operator()を持つオブジェクトを返す
 }
 
